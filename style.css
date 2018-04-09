@@ -1,15 +1,16 @@
-
 body{
 background-image:url("http://www.powerpointhintergrund.com/uploads/grunge-diamond-metal-background-1.jpeg");
 padding:0px;
 margin: 0px;
 font-size:20px;
-color: #000000;     
+color: #000000;
 background-size: cover;
 background-repeat: no-repeat;
 }
 table{
-font-size:18px;
+border: 2px;
+width: 100%;
+font-size:16px;
 background-color:black;
 padding:none;
 }
@@ -29,9 +30,11 @@ border: none;
 color:black;
 text-align: right;
 padding:1px;
+padding-top: 4px;
+padding-bottom: 4px;
 padding-right: 25px;
-font-size:11px; 
-background-color:#bebebe; 
+font-size:11px;
+background-color:#bebebe;
 }
 ul{
 list-style-type: none;
@@ -63,24 +66,22 @@ padding:none;
 background-color:black;
 }
 button{
-transform:100px; 
-} 
+transform:100px;
+}
+img{
+padding:none;
+}
 #div1{
 border-style:solid white;
 border-width: 100px;
 background-color:black;
 padding:none;
 }
-img{
-padding-bottom:"20px";
-
-}
 #img{
-padding-bottom: 25px;
+padding-bottom: 30px;
 }
 #img02{
 float:right;
-padding-top:100px;
 height:33px ;
 width: 33px;
 }
@@ -90,7 +91,6 @@ width:125px;
 }
 #table1{
 border: solid white 2px;
-font-size:20px;
 color: white;
 width: 100%
 }
@@ -118,13 +118,9 @@ padding-right:25px;
 float: right;
 width: 30%;
 height: 30%;
-type:text;
 border:2px solid orange;
 background-color: white;
 color:black;
 font-size: 20px;
 padding: none;
 }
-
-
-
