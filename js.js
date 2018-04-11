@@ -1,3 +1,3 @@
 function gino(){
-alert("YOU GET HACK...");
+alert("YOU GET HACK...!");
 }
