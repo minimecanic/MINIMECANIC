@@ -67,6 +67,7 @@ padding:none;
 background-color:black;
 }
 button{
+float:center;
 padding-left:25px; 
 }
 img{
