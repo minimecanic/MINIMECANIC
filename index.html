@@ -8,9 +8,20 @@
  <link rel="preload" href="style.css" as="style">
   <link rel="preload" href="js.js" as="script">
  -->
-      <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+              <script> 
+      $(function(){
+        $("#submenu").hide();
+        $("#menu1").hover(function() {
+          $("#item").slideToggle(350);
+          $("#submenu").slideToggle(350);
+  }); 
+});
+    </script>
         </head>
-                       <body>  
+                       <body>
+                        <br>
+                        
   <div id="ppal">                       
  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -19,6 +30,15 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/fr_CA/i/scr/pixel.gif" width="1" height="1">
 </form>          
     </div>
+    <div id="menu1" class="menu1">
+  <div id="item">MENU</div>
+  <div id="submenu">
+    <a href="https://minimecanic.github.io/SERVICE/" target="_blank"><button>SERVICES</button></a>
+    <a href="https://minimecanic.github.io/PRODUCT/" target="_blank"><button>PRODUCTS</button></a>
+    <a href="https://minimecanic.github.io/ABOUT/" target="_blank"><button>ABOUT</button></a>
+  </div>
+</div>
+    
        <!--
 <li><a target="_blank" href="https://www.Twitter.com/" />
 <img id="twit" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1259px-Twitter_Bird.svg.png" alt="image not found" height="33" width="33" />
@@ -30,6 +50,7 @@
 <img id="face" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAY1BMVEU7WZj///8vUZTFzNwhSJCgq8c4V5fZ3eglS5H6+/z39/pHYZxKZJ00VJXq7PJ7i7RZcqewutGWpMTS1+NjeaoKPozAyNsYQ47w8ve6wtd0hrFVbqWLm74AOIk/XZpQaaGDkrjHHLQPAAACEUlEQVRoge3bbY+iMBAH8FJkWh+oxeVWxD30+3/Kxbt9kKWIGWbaXG7+70xIfqEUGVpGZVnmCt+pqOl84XpYZVkFGuLaSvVkdcOr+PRfvsqUgyR2r4NThU5jK6UL5ROdeH/qXkWe5/dJSEskEsk/GQAov9P/AhXrCaIt7Hzd7m9p27r2/rLroIzAl3q7Pxm3yb6y3mwa58xrx62Xts3v3Ps0W14cjlcXlm9VKi+uL2aSZsZBXycGnB8HfXhE8+J2xubE7XXGZsThvE6H20fznBnXs4POiMP0fws7/syJ8+HzV5wNL+vZqc6H6+IJmwu3+XM4h63UxFw31dt1/5WWhQYfvOT5xVp9V8mVLHi5D9mHVZSSMfgszW2cctVWAbzmGeUxfhrbzTGOrVavgVFfxcIDt3llE+LRFvcEF1xwwQUnCehhfoXwlf4ZGnz7YoZpxrgzo5AUr7B75hVhlIZkQwV2D5depmJItu+QeE5y0ZF4lRI/pMRbkloaiV9IXiKQOM0+OQ5vaGppHG5S4nlKnOY2R+JvNG+tOJzmNkfiZ5q1AhxO9DkMCt8QLRb0+HqYAPbzCEO1WAB2mN+BlYnDcXgMWzH7/5TOggsuuOCCCy644IILLrjgggsuuOCCC47GF28z4vFuebMcGge/vE0QjetieYMkFr81SC5uDUXif1pDFzfFovDPptil7cAY/KMd+B1/YyMQuSOmqAAAAABJRU5ErkJggg==" width="30px" height="30px" />
 </a></li>
   -->
+  <br><br>
     <div id="menu" class="menu">
             <ul>
   <div id="item_1"><li> <a name="about" target="_blank" href="https://minimecanic.github.io/ABOUT/">About</a></li></div>
@@ -38,6 +59,7 @@
  <div id="item_4"><li> <a class="active" target="_blank" href="https://minimecanic.github.io/minimecanic/HOME">Home</a></li></div>
 </ul>
 </div>  
+<br><br>
 <h2><img type="image/jpg" title="MINIMECANIC" src="https://github.com/minimecanic/minimecanic.github.io/blob/master/
 MINIMECANIC-111417-0336-3109.png?raw=true" alt="image not found" />
     </h2>
@@ -217,18 +239,37 @@ font-size: 20px;
 padding: none;
 }
 #menu{
-  text-align:center;
-margin-right:35px;
+text-align:center;
+margin-left: 12%;
+margin-right:12%;
+padding-right: 100px;
 padding left:none;
-padding right:100px;
 }
 #ppal{
 text-align:right;
 margin-top:10px;  
 }
-              a{
-            float:center;
-              }
+a{
+float:center;
+}
+#menu1{
+font-size: 22px;
+background-color:#bebebebe00;
+border: solid #bebebe 1px;
+width: 10%;
+padding-bottom: 15px;
+padding-top: 15px;
+}
+#item{
+text-align: center;
+}
+#submenu{
+text-align: center;
+}
+#submenu{
+float: center;
+text-align: center;
+}
         </style> 
     </body>
 </html>
